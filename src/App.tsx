@@ -259,7 +259,7 @@ function SectionHeading({
 
 function WhoIsEbers() {
   return (
-    <section id="who" className="relative py-16 sm:py-24">
+    <section id="who" className="relative py-12 sm:py-16">
       <div className="container-x">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <div>
@@ -290,7 +290,6 @@ function StatementOfNeed() {
     <section className="relative py-16 sm:py-24">
       <div className="container-x">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
-          <Visual variant="need" alt="Abstract shelf-gap metaphor showing product bars of varying heights with the brand-green bar standing tallest" className="reveal aspect-[4/3] w-full lg:order-last" />
           <div>
             <SectionHeading index="02" eyebrow="STATEMENT OF NEED" title={<>Winning the moment that <span className="text-gradient">decides the sale</span></>} />
             <p className="reveal reveal-delay-1 mt-7 text-lg leading-relaxed text-white/70">
@@ -305,6 +304,7 @@ function StatementOfNeed() {
               ))}
             </ul>
           </div>
+          <Visual variant="need" alt="Abstract shelf-gap metaphor showing product bars of varying heights with the brand-green bar standing tallest" className="reveal aspect-[4/3] w-full lg:order-last" />
         </div>
       </div>
     </section>
@@ -313,7 +313,7 @@ function StatementOfNeed() {
 
 function Objective() {
   return (
-    <section className="relative py-16 sm:py-24">
+    <section className="relative py-12 sm:py-16">
       <div className="container-x">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <div>
@@ -344,7 +344,7 @@ function Diagnostic() {
     'A structured, personalized way to guide patients across the full NewGel+ portfolio',
   ];
   return (
-    <section id="diagnostic" className="relative py-16 sm:py-24">
+    <section id="diagnostic" className="relative py-12 sm:py-16">
       <div className="absolute inset-0 -z-10">
         <div className="absolute left-1/2 top-1/3 h-[60vh] w-[60vh] -translate-x-1/2 rounded-full bg-brand-blue/10 blur-[120px]" />
       </div>
