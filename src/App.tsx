@@ -259,7 +259,7 @@ function SectionHeading({
 
 function WhoIsEbers() {
   return (
-    <section id="who" className="relative py-24 sm:py-32">
+    <section id="who" className="relative py-16 sm:py-24">
       <div className="container-x">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <div>
@@ -287,7 +287,7 @@ function StatementOfNeed() {
     "Patients don't know the difference between products, or how trusted NewGel+ actually is in the market",
   ];
   return (
-    <section className="relative py-24 sm:py-32">
+    <section className="relative py-16 sm:py-24">
       <div className="container-x">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <Visual variant="need" alt="Abstract shelf-gap metaphor showing product bars of varying heights with the brand-green bar standing tallest" className="reveal aspect-[4/3] w-full lg:order-last" />
@@ -313,7 +313,7 @@ function StatementOfNeed() {
 
 function Objective() {
   return (
-    <section className="relative py-24 sm:py-32">
+    <section className="relative py-16 sm:py-24">
       <div className="container-x">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <div>
@@ -344,7 +344,7 @@ function Diagnostic() {
     'A structured, personalized way to guide patients across the full NewGel+ portfolio',
   ];
   return (
-    <section id="diagnostic" className="relative py-24 sm:py-32">
+    <section id="diagnostic" className="relative py-16 sm:py-24">
       <div className="absolute inset-0 -z-10">
         <div className="absolute left-1/2 top-1/3 h-[60vh] w-[60vh] -translate-x-1/2 rounded-full bg-brand-blue/10 blur-[120px]" />
       </div>
