@@ -35,12 +35,13 @@ type Idea = {
   icon: typeof Globe;
   visual: Parameters<typeof Visual>[0]['variant'];
   alt: string;
-  desc: string;
+  desc: ReactNode;
   bullets: ReactNode[];
   tagline?: string;
 };
 
 const IDEAS: Idea[] = [
+  /*
   {
     n: '01',
     title: 'Scar Care Hub .  Own the Journey',
@@ -56,9 +57,9 @@ const IDEAS: Idea[] = [
       (<><span className="font-bold">Myth or Fact? </span> A serious, engaging series tackling real patient misconceptions about scars and silicone, with the animated character revealing what is actually true.</>),
       (<><span className="font-bold"> Which NewGel+ Is Right for Me? </span>Simple visual content showing when to consider Gel, Gel+E, UV, or Sheets.</>),
     ],
-  },
+  }, 
   {
-    n: '02',
+    n: '01',
     title: 'Scan Your Scar',
     type: 'AI-POWERED ASSESSMENT',
     icon: ScanLine,
@@ -66,57 +67,60 @@ const IDEAS: Idea[] = [
     alt: 'A phone scanning frame with a green scan line over a scar, surrounded by floating orbs',
     desc: 'A simple interactive quiz that asks patients a few questions about their scar, its age, location, and current condition. Based on their answers, the experience generates a personalized Scar Care Report with the most suitable NewGel+ product, practical care tips, and guidance they can share with their doctor or pharmacist.\nQuick Scar Quiz: Simple questions such as:\nHow old is your scar?\nWhere is your scar located?\nIs it raised, red, dark, or itchy?\nAre you currently using any scar treatment?',
     bullets: [
-      'Personalized Report: Recommends the most suitable NewGel+ option based on the patient\'s answers.',
-      'Tips & Tricks: Provides simple, practical advice for better scar care and protection.',
-      'Share with Your HCP: The patient can easily share the report with their doctor or pharmacist for discussion.'
     ],
     tagline: 'From a simple scan to a personalized scar-care plan',
-  },
+  },*/
   {
-    n: '03',
+    n: '01',
     title: 'NewGel  — See the Difference',
     type: 'INTERACTIVE  AWARENESS EXPERIENCE',
     icon: Sun,
     visual: 'uv',
     alt: 'A glowing sun orb radiating  rays over a gradient panel',
-    desc: 'Patients take a photo of their scar and see how it could look with continued NewGel+ protection over time. a shareable, filter-style experience that turns a product benefit into something visible and personal before leading naturally to NewGel.',
-    bullets: [
-      "Activates NewGel+'s most under-leveraged asset. its UV/SPF variant",
-      'Makes the product\'s benefit visible and shareable, driving organic reach',
+    desc:       <>
+        <span className="font-bold">Entry point: Pharmacy Product Stand → QR Code → Before & After Experience</span>
+        <br />
+          The journey starts at a NewGel+ product stand in the pharmacy, where a QR code invites shoppers to “See the Difference.” Scanning it opens an interactive experience featuring relevant before-and-after results and scar-care education, helping reinforce product efficacy and support the purchase decision at the point of sale.
+
+      </>,
+    bullets: [,
     ],
     tagline: 'Make the invisible impact of UV visible',
 
   },
   {
-    n: '04',
+    n: '02',
     title: 'Scar Check — From Diagnosis to Better Scar Care',
     type: 'INTERACTIVE DIGITAL CONTENT',
     icon: LayoutGrid,
     visual: 'new',
     alt: 'Abstract hub diagram with a central green node connected by spokes to blue satellite nodes',
-    desc: 'A patient-facing waiting-room experience where patients scan a QR code on a specialty-relevant flyer and answer three simple questions about their scar. Their answers unlock a personalized result that educates them about proper scar care, the difference between medical-grade silicone and lower-quality alternatives, and introduces NewGel+ as a suitable option.',
-    bullets: [
-      (<><span className="font-bold">3-Question Quiz:</span>  Scar age, location, and current care.</>),
-      (<><span className="font-bold"> Personalized Result:</span> Personalized Result: Highlights what their scar may need and introduces NewGel+.</>),
-      (<><span className="font-bold">Know the Difference:  </span>Explains medical-grade silicone vs. lower-quality products.</>),
-      (<><span className="font-bold">Go Deeper:  </span>Links to the Scar Care Hub or an interactive AR/3D MOA.</>),
-      (<><span className="font-bold">Specialty-Based:</span> Content adapts to the clinic, e.g. C-section scars for OB/GYNs or surgical scars for plastic surgeons.</>),
+    desc: (
+      <>
+        <span className="font-bold">Entry point: Clinic Drop Cards → QR Code → Scar Check</span>
+        <br />
+        Place specialty-specific drop cards in clinics. Patients scan the QR code to access a short Scar Check, with questions personalized according to the clinic specialty and relevant scar types. Based on their answers, they receive a personalized recommendation for the most suitable NewGel+ product/version and can check their scar before and after using it through a filter experience, helping bridge the journey from HCP interaction to product consideration.
+      </>
+    ),
+    bullets: [,
     ],
   },
   {
-    n: '05',
+    n: '03',
     title: 'Inside the Scar',
     type: '3D / AR MECHANISM-OF-ACTION EXPERIENCE',
     icon: Box,
     visual: 'ar',
     alt: 'A translucent 3D AR cube floating above the skin surface in green and blue',
-    desc: 'Patients scan a QR code on any NewGel+ product using their phone camera, and the product\'s effect appears directly over their own skin .  placed on the table or on their arm in AR. They see, in real time, how the silicone works beneath the surface and how the scar changes over the course of treatment, like a live mechanism-of-action model applied to their own body.',
+    desc:       <>
+        <span className="font-bold">Entry point: Website / E-commerce / Clinic Drop Cards → Interactive Experience → Product Consideration</span>
+        <br />
+        Inside Your Scar can be integrated directly into the NewGel+ website as an educational experience that helps users understand what is happening beneath the surface of a scar and how silicone-based scar management works. The experience can also be promoted through e-commerce product pages, reaching consumers while they are actively considering a purchase, with social media used to drive additional traffic to the experience.
+      </>,
     bullets: [
-      'Builds the clinical understanding patients and pharmacists currently lack',
-      'Each product carries its own QR code, connecting shelf to screen instantly',
     ],
     tagline: 'See how silicone works .  beneath the surface',
-  },
+  },/*
   {
 n: '06',
     title: 'Scar Journey',
@@ -146,7 +150,7 @@ n: '06',
       'Turns four separate SKUs into one connected progression patients want to complete',
     ],
     tagline: 'Stay consistent. Build your streak. Unlock your next step',
-  },
+  },*/
 
 ];
 
@@ -218,10 +222,10 @@ function Hero() {
             Digital &amp; Interactive Experiences for the UAE Scar Care Journey
           </p>
           <p className="reveal reveal-delay-3 mt-6 text-sm text-white/50">
-            Prepared for: <span className="text-white/80">Metromed</span> &nbsp;|&nbsp; Scope: <span className="text-white/80">United Arab Emirates .  Scar Management Market</span> &nbsp;|&nbsp; August 2026
+            Prepared for: <span className="text-white/80">Metromed</span> &nbsp;|&nbsp; Scope: <span className="text-white/80">United Arab Emirates .  Scar Management Market</span> &nbsp;|&nbsp; September 2026
           </p>
           <div className="reveal reveal-delay-4 mt-10 flex flex-wrap items-center gap-4">
-            <a href="#ideas" className="btn-brand">Explore the 7 Ideas <ArrowUpRight className="h-4 w-4" /></a>
+            <a href="#ideas" className="btn-brand">Explore the  Ideas <ArrowUpRight className="h-4 w-4" /></a>
             <a href="#who" className="btn-ghost">Who is Ebers</a>
           </div>
         </div>
@@ -280,6 +284,7 @@ function WhoIsEbers() {
   );
 }
 
+/*
 function StatementOfNeed() {
   const bullets = [
     'Competitors pay pharmacists for shelf recommendation .  NewGel+ does not, and needs another way to win that moment',
@@ -310,7 +315,9 @@ function StatementOfNeed() {
     </section>
   );
 }
+*/
 
+/*
 function Objective() {
   return (
     <section className="relative py-12 sm:py-16">
@@ -328,20 +335,68 @@ function Objective() {
     </section>
   );
 }
+*/
 
 function Diagnostic() {
   const found = [
-    'Google, Amazon.ae, and Noon searches for scar care are won by competitors and aesthetic clinics .  not NewGel+',
-    'Search interest in "Newgel/Newgel+" remains under 10 (relative interest) versus 65–85 for KeloCote',
-    "Pharmacists default to competitors out of habit; NewGel+ has no toolkit to shift that recommendation",
-    "Patients don't understand the difference between the NewGel+ products themselves .  there is no content guiding them between the gel, gel with Vitamin E, UV gel, and sheets",
-    "NewGel+'s broad product range is currently a source of confusion rather than an advantage, with nothing helping patients or pharmacists match the right SKU to the right scar",
+    (
+      <>
+        <span className="font-bold">NewGel+ already has a strong clinical foundation.</span>
+        <br />
+        With a portfolio built around medical-grade silicone scar management and solutions addressing different patient needs.
+      </>
+    ),
+    (
+      <>
+        <span className="font-bold">The portfolio requires clearer navigation.</span>
+        <br />
+        Different formats and variants—including silicone gel, Vitamin E formulations, UV protection and silicone sheets—create an opportunity to better guide patients toward the most relevant solution for their scar and lifestyle.
+      </>
+    ),
+    (
+      <>
+        <span className="font-bold">NewGel+ is available through UAE e-commerce and pharmacy channels.</span>
+        <br />
+        Availability alone does not guarantee differentiation at the moment consumers are comparing scar-care alternatives.
+      </>
+    ),
+    (
+      <>
+        <span className="font-bold">Scar management is an ongoing journey rather than a one-time interaction.</span>
+        <br />
+        NewGel+ guidance indicates that visible improvement can take several weeks, while treatment may continue for approximately 3 months for newer scars and up to 6 months for older scars—creating multiple opportunities to support adherence.
+      </>
+    ),
   ];
   const improve = [
-    'Most competitors educate generically .  almost none personalize by persona or scar type, which is an open lane for NewGel+',
-    'Digital visibility at the exact moment of search and decision',
-    'Ongoing patient engagement across the 8-week to 6-month treatment window',
-    'A structured, personalized way to guide patients across the full NewGel+ portfolio',
+    (
+      <>
+        <span className="font-bold">Strengthen visibility at high-intent moments</span>
+        <br />
+        Make NewGel+ more discoverable and compelling when consumers are actively searching, comparing or preparing to purchase scar-care products.
+      </>
+    ),
+    (
+      <>
+        <span className="font-bold">Turn clinical credentials into clear consumer value</span>
+        <br />
+        Translate medical-grade silicone, UV protection and other product features into simple, relevant reasons to choose NewGel+.
+      </>
+    ),
+    (
+      <>
+        <span className="font-bold">Simplify product selection through personalization</span>
+        <br />
+        Help patients answer a critical question: “Which NewGel+ product is right for my scar?” using scar type, location, age, exposure and relevant patient needs.
+      </>
+    ),
+    (
+      <>
+        <span className="font-bold">Extend engagement beyond the initial purchase</span>
+        <br />
+        Support patients throughout a treatment journey that can extend from several weeks to 3–6 months, reinforcing correct use, consistency and adherence.
+      </>
+    ),
   ];
   return (
     <section id="diagnostic" className="relative py-12 sm:py-16">
@@ -349,9 +404,9 @@ function Diagnostic() {
         <div className="absolute left-1/2 top-1/3 h-[60vh] w-[60vh] -translate-x-1/2 rounded-full bg-brand-blue/10 blur-[120px]" />
       </div>
       <div className="container-x">
-        <SectionHeading index="04" eyebrow="DIAGNOSTIC" title={<>Why NewGel+ isn't the <span className="text-gradient">first choice</span> today</>} />
+        <SectionHeading index="02" eyebrow="DIAGNOSTIC" title={<>Why NewGel+ isn't the <span className="text-gradient">first choice</span> today</>} />
         <p className="reveal reveal-delay-1 mt-7 max-w-3xl text-lg leading-relaxed text-white/70">
-          NewGel+'s challenge is not product quality .  it is visibility at the moments that decide the sale. Our research shows NewGel+ sits between two forces: trusted legacy brands (Kelo-Cote, Dermatix Ultra) that own clinical credibility, and low-cost, high-SEO marketplace listings that own visibility. NewGel+ currently owns neither.
+          NewGel+ already offers a credible, medical-grade silicone scar-management portfolio with solutions designed for different scar needs. However, in a competitive UAE market, strong product credentials alone may not be enough. The opportunity is to make NewGel+ easier to discover, easier to understand and easier to choose across the moments that influence purchase from clinic recommendation and pharmacy shelves to search, e-commerce and ongoing treatment.
         </p>
 
         <div className="mt-12 grid gap-6 lg:grid-cols-2">
@@ -480,7 +535,7 @@ function Ideas() {
         <div className="absolute right-0 top-1/4 h-[60vh] w-[60vh] rounded-full bg-brand-green/10 blur-[120px]" />
       </div>
       <div className="container-x">
-        <SectionHeading index="05" eyebrow="THE IDEAS" title={<>Seven digital &amp; interactive <span className="text-gradient">concepts</span></>} />
+        <SectionHeading index="03" eyebrow="THE IDEAS" title={<>Three digital &amp; interactive <span className="text-gradient">concepts</span></>} />
         <p className="reveal reveal-delay-1 mt-7 max-w-3xl text-lg leading-relaxed text-white/70">
           These concepts work as one connected patient journey, powered by a dedicated social media content strategy. Each idea will have its own creative content videos, reels, and educational posts—designed to attract patients from Facebook, Instagram, YouTube, and TikTok into the NewGel+ Hub.
           <br /><br />
@@ -512,9 +567,9 @@ function Conclusion() {
       <div className="container-x">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <div>
-            <SectionHeading index="06" eyebrow="CONCLUSION" title={<>From invisible to <span className="text-gradient">first choice</span></>} />
+            <SectionHeading index="04" eyebrow="CONCLUSION" title={<>From invisible to <span className="text-gradient">first choice</span></>} />
             <p className="reveal reveal-delay-1 mt-7 text-lg leading-relaxed text-white/70">
-              These Seven ideas respond directly to the gaps our research identified .  but ideas alone will not move NewGel+ from invisible to first choice. NewGel+ needs a well-crafted plan built on research: a dedicated SEO strategy to win the searches competitors currently own, and a structured plan to connect every idea into one patient journey. We would like to arrange a very urgent meeting to walk through our full analysis and align on next steps.
+              These Three ideas respond directly to the gaps our research identified .  but ideas alone will not move NewGel+ from invisible to first choice. NewGel+ needs a well-crafted plan built on research: a dedicated SEO strategy to win the searches competitors currently own, and a structured plan to connect every idea into one patient journey. We would like to arrange a very urgent meeting to walk through our full analysis and align on next steps.
             </p>
             <div className="reveal reveal-delay-2 mt-9">
               <div className="relative overflow-hidden rounded-2xl border border-brand-green/30 bg-gradient-to-r from-brand-green/15 via-ink-900 to-brand-blue/15 p-6 sm:p-8">
@@ -570,8 +625,8 @@ export default function App() {
       <main>
         <Hero />
         <WhoIsEbers />
-        <StatementOfNeed />
-        <Objective />
+        {/* <StatementOfNeed /> */}
+        {/* <Objective /> */}
         <Diagnostic />
         <Ideas />
         <Conclusion />
