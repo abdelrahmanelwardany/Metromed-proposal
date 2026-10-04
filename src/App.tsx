@@ -120,7 +120,7 @@ const IDEAS: Idea[] = [
     bullets: [
     ],
     tagline: 'See how silicone works .  beneath the surface',
-  },/*
+  },
   {
 n: '06',
     title: 'Scar Journey',
@@ -129,28 +129,21 @@ n: '06',
     visual: 'whatsapp',
     alt: 'A WhatsApp-style chat conversation with care reminders and a patient reply',
     desc: 'A personalized WhatsApp recovery journey that stays with patients from their first purchase through the full scar-healing period. It sends timely reminders, care tips, progress check-ins, and practical guidance to help patients stay consistent with their NewGel+ routine. while introducing relevant features based on their recovery needs.',
-    bullets: [
-      (<><span className="font-bold">Weekly Care Reminders:</span> Personalized reminders to help patients stay consistent with their NewGel+ routine.</>),
-      (<><span className="font-bold">Progress Check-ins:</span>  Patients can share updates and track their recovery journey over time.</>),
-      (<><span className="font-bold">Beat the Sun: </span>A built-in feature that uses the day’s UV and weather conditions to explain how sun exposure can affect a healing scar and provide a personalized protection tip, naturally highlighting NewGel+ UV when relevant.</>),
-      (<><span className="font-bold">Care Tips: </span>Simple, timely advice based on where the patient is in their recovery journey.</>),
-      (<><span className="font-bold">Repurchase Reminder: </span>Timely notifications when patients may need to repurchase, helping maintain treatment continuity.</>),
+    bullets: [,
     ],
   },
   {
-    n: '07',
+    n: '05',
     title: 'Scar Streak & Score',
     type: 'GAMIFIED RECOVERY & LOYALTY JOURNEY',
     icon: Flame,
     visual: 'streak',
     alt: 'A gamified streak calendar with glowing green-blue completed days and a streak badge',
     desc: 'Patients build a Scar Streak by logging their daily routine and progress photos. Completing a full streak .  for example, finishing a full treatment cycle without missing a week .  unlocks a real reward: a discount on their next NewGel+ product or a free gift, redeemable directly through the Hub. Instead of a generic loyalty points system, the reward is tied to completing recovery, giving patients a concrete reason to finish treatment and repurchase.',
-    bullets: [
-      'Directly supports adherence across the full treatment window',
-      'Turns four separate SKUs into one connected progression patients want to complete',
+    bullets: [,
     ],
     tagline: 'Stay consistent. Build your streak. Unlock your next step',
-  },*/
+  },
 
 ];
 
@@ -535,13 +528,13 @@ function Ideas() {
         <div className="absolute right-0 top-1/4 h-[60vh] w-[60vh] rounded-full bg-brand-green/10 blur-[120px]" />
       </div>
       <div className="container-x">
-        <SectionHeading index="03" eyebrow="THE IDEAS" title={<>Three digital &amp; interactive <span className="text-gradient">concepts</span></>} />
+        <SectionHeading index="03" eyebrow="THE IDEAS" title={<>Five digital &amp; interactive <span className="text-gradient">concepts</span></>} />
         <p className="reveal reveal-delay-1 mt-7 max-w-3xl text-lg leading-relaxed text-white/70">
-          These concepts work as one connected patient journey, powered by a dedicated social media content strategy. Each idea will have its own creative content videos, reels, and educational posts—designed to attract patients from Facebook, Instagram, YouTube, and TikTok into the NewGel+ Hub.
+          These concepts work as one connected patient journey, powered by a central NewGel+ Hub. Patients can be directed to the Hub through multiple entry points, including Pharmacy Product Stands via QR codes, Clinic Drop Cards, the Website / E-commerce, and Social Media.
           <br /><br />
-          From there, the ecosystem moves patients through awareness and education → product consideration and purchase → adherence → retention and repurchase, with each digital experience supporting the next step in the journey.
+          From the Hub, the ecosystem moves patients through awareness and education → product consideration and purchase → adherence → retention and repurchase, with each digital experience supporting the next step in the journey.
           <br /><br />
-          <span className="font-bold">Social Media → NewGel+ Hub → Patient Journey → Purchase → Adherence → Retention</span>
+          <span className="font-bold">Pharmacy Product Stand / QR Code → Clinic Drop Cards → Website / E-commerce → Social Media → NewGel+ Hub → Patient Journey → Purchase → Adherence → Retention</span>
 
         </p>
 
@@ -569,7 +562,7 @@ function Conclusion() {
           <div>
             <SectionHeading index="04" eyebrow="CONCLUSION" title={<>From invisible to <span className="text-gradient">first choice</span></>} />
             <p className="reveal reveal-delay-1 mt-7 text-lg leading-relaxed text-white/70">
-              These Three ideas respond directly to the gaps our research identified .  but ideas alone will not move NewGel+ from invisible to first choice. NewGel+ needs a well-crafted plan built on research: a dedicated SEO strategy to win the searches competitors currently own, and a structured plan to connect every idea into one patient journey. We would like to arrange a very urgent meeting to walk through our full analysis and align on next steps.
+              These Five ideas respond directly to the gaps our research identified .  but ideas alone will not move NewGel+ from invisible to first choice. NewGel+ needs a well-crafted plan built on research: a dedicated SEO strategy to win the searches competitors currently own, and a structured plan to connect every idea into one patient journey. We would like to arrange a very urgent meeting to walk through our full analysis and align on next steps.
             </p>
             <div className="reveal reveal-delay-2 mt-9">
               <div className="relative overflow-hidden rounded-2xl border border-brand-green/30 bg-gradient-to-r from-brand-green/15 via-ink-900 to-brand-blue/15 p-6 sm:p-8">
