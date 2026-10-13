@@ -80,7 +80,7 @@ const IDEAS: Idea[] = [
     desc:       <>
         <span className="font-bold">Entry point: Pharmacy Product Stand → QR Code → Before & After Experience</span>
         <br />
-          The journey starts at a NewGel+ product stand in the pharmacy, where a QR code invites shoppers to “See the Difference.” Scanning it opens an interactive experience featuring relevant before-and-after results and scar-care education, helping reinforce product efficacy and support the purchase decision at the point of sale.
+          The journey starts at a NewGel+ product stand in the pharmacy, where a QR code invites shoppers to “See the Difference.” Scanning it opens an interactive filter that captures the patient's scar and visualizes how it could potentially look after using NewGel+ as directed. The experience is followed by an educational flyer or digital material providing scar-care information and guidance on the product, helping raise awareness, demonstrate its potential benefits, and support the purchase decision at the point of sale.
 
       </>,
     bullets: [,
@@ -115,14 +115,14 @@ const IDEAS: Idea[] = [
     desc:       <>
         <span className="font-bold">Entry point: Website / E-commerce / Clinic Drop Cards → Interactive Experience → Product Consideration</span>
         <br />
-        Inside Your Scar can be integrated directly into the NewGel+ website as an educational experience that helps users understand what is happening beneath the surface of a scar and how silicone-based scar management works. The experience can also be promoted through e-commerce product pages, reaching consumers while they are actively considering a purchase, with social media used to drive additional traffic to the experience.
+        Inside the Scar is an AR experience that allows users to scan a QR code and view a 3D visualization of the scar and the underlying skin layers through their phone. The experience illustrates how the scar and skin layers could improve over time with silicone-based scar management, helping users better understand the healing process and the role of NewGel+. It can be integrated into the NewGel+ website, promoted through e-commerce product pages, and supported by social media to drive traffic and encourage product consideration.
       </>,
     bullets: [
     ],
     tagline: 'See how silicone works .  beneath the surface',
   },
   {
-n: '06',
+n: '04',
     title: 'Scar Journey',
     type: 'WHATSAPP RECOVERY COMPANION',
     icon: MessageSquare,
