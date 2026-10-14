@@ -5,7 +5,7 @@ import objectiveImage from '../../Images/Objective.jpeg';
 import diagnosticImage from '../../Images/Diagnostic.jpeg';
 import idea1Image from '../../Images/idea- 1.jpg';
 import idea11Image from '../../Images/idea- 1.1.jpg';
-import idea2Image from '../../Images/idea- 2.png';
+import idea2Image from '../../Images/idea- 2.jpg';
 import idea3Image from '../../Images/idea- 3.jpg';
 import idea4Image from '../../Images/idea- 4.png';
 import idea44Image from '../../Images/idea- 4.1.jpg';

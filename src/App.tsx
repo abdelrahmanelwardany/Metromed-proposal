@@ -4,7 +4,7 @@ import ebersLogo from '../Images/Ebers logo.png';
 import infoImage from '../Images/info.png';
 import idea1Image from '../Images/idea- 1.jpg';
 import idea11Image from '../Images/idea- 1.1.jpg';
-import idea2Image from '../Images/idea- 2.png';
+import idea2Image from '../Images/idea- 2.jpg';
 import idea3Image from '../Images/idea- 3.jpg';
 import idea33Image from '../Images/idea- 3.1.jpg';
 import idea4Image from '../Images/idea- 4.png';
@@ -80,8 +80,8 @@ const IDEAS: Idea[] = [
   },*/
   {
     n: '01',
-    title: 'NewGel  — See the Difference',
-    type: 'INTERACTIVE  AWARENESS EXPERIENCE',
+    title: 'AI-Powered Scar Photo Analysis & Product Recommendation',
+    type: 'INTERACTIVE SCAR ASSESSMENT & PHOTO SIMULATION',
     icon: Sun,
     images: [
       { src: idea1Image, alt: 'Patient viewing a personalized scar-care assessment and before-and-after visualization on a phone' },
@@ -119,7 +119,7 @@ const IDEAS: Idea[] = [
   },*/
   {
     n: '02',
-    title: 'Inside the Scar',
+    title: 'Interactive WEB - 3D Scar Education & Product Exploration',
     type: 'INTERACTIVE 3D MECHANISM-OF-ACTION EXPERIENCE',
     icon: Box,
     images: [
@@ -136,7 +136,7 @@ const IDEAS: Idea[] = [
   },
   {
     n: '03',
-    title: 'AI-POWERED PATIENT RECOVERY COMPANION',
+    title: 'AI-POWERED PATIENT RECOVERY COMPANION - CHATBOT',
     type: 'WHATSAPP RECOVERY COMPANION',
     icon: MessageSquare,
     images: [
@@ -156,8 +156,8 @@ const IDEAS: Idea[] = [
   },
   {
     n: '04',
-    title: 'Scar Streak & Score',
-    type: 'GAMIFIED RECOVERY & LOYALTY JOURNEY',
+    title: 'Daily Challenges, Progress Tracking & Rewards',
+    type: 'GAMIFIED SCAR-CARE ADHERENCE & LOYALTY PLATFORM',
     icon: Flame,
     images: [
       { src: idea4Image, alt: 'Patient earning rewards for maintaining a NewGel+ scar-care streak' },
