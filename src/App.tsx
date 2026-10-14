@@ -127,7 +127,7 @@ const IDEAS: Idea[] = [
     ],
     desc:       <>
         <span className="font-bold">Entry Point: Website / E-commerce / Clinic Drop Cards → Interactive Web Experience → Product Selection → Direct Purchase</span>
-        <br />
+        <br /><br />
         Inside the Scar is an interactive web experience featuring impressive 3D animations that take users beneath the skin to explore scar formation and understand how silicone-based scar management works. Through an engaging visual journey, users discover how NewGel+ products work and how the scar may improve over time with appropriate use. The experience showcases the different NewGel+ products and how each works, allowing users to explore the available options and select the most suitable product before being redirected to the e-commerce store to purchase it directly.
       </>,
     bullets: [
@@ -145,7 +145,7 @@ const IDEAS: Idea[] = [
     ],
     desc:       <>
         <span className="font-bold">Entry Point: Product Purchase / Interactive Experiences → Chatbot (WhatsApp / Telegram / Standalone Platform) → Ongoing Follow-up & Progress Tracking</span>
-        <br />
+        <br /><br />
         Scar Journey is an AI-powered chatbot that supports patients throughout their scar-care journey via<span className="font-bold"> WhatsApp, Telegram, or a standalone platform.</span> Patients can access the chatbot after purchasing a NewGel+ product or through any of the interactive experiences. It provides personalized information about NewGel+ products, explains how to use them and what makes them different, and sends timely reminders and follow-ups to encourage consistent use and improve adherence.
         <br />
         <br />
