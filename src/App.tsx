@@ -146,10 +146,10 @@ const IDEAS: Idea[] = [
     desc:       <>
         <span className="font-bold">Entry Point: Product Purchase / Interactive Experiences → Chatbot (WhatsApp / Telegram / Standalone Platform) → Ongoing Follow-up & Progress Tracking</span>
         <br />
-        Scar Journey is an AI-powered chatbot that supports patients throughout their scar-care journey via WhatsApp, Telegram, or a standalone platform. Patients can access the chatbot after purchasing a NewGel+ product or through any of the interactive experiences. It provides personalized information about NewGel+ products, explains how to use them and what makes them different, and sends timely reminders and follow-ups to encourage consistent use and improve adherence.
+        Scar Journey is an AI-powered chatbot that supports patients throughout their scar-care journey via<span className="font-bold"> WhatsApp, Telegram, or a standalone platform.</span> Patients can access the chatbot after purchasing a NewGel+ product or through any of the interactive experiences. It provides personalized information about NewGel+ products, explains how to use them and what makes them different, and sends timely reminders and follow-ups to encourage consistent use and improve adherence.
         <br />
         <br />
-        Patients can also upload photos of their scars to track their progress over time, while receiving relevant care tips, educational materials, and product guidance. The channel can also be used to share promotional offers, discounts, and other relevant content, helping maintain patient engagement throughout the recovery journey.
+        <span className="font-bold">Patients can also upload photos of their scars to track their progress over time,</span> while receiving relevant care tips, educational materials, and product guidance. The channel can also be used to share promotional offers, discounts, and other relevant content, helping maintain patient engagement throughout the recovery journey.
       </>,
     bullets: [
     ],
@@ -163,7 +163,9 @@ const IDEAS: Idea[] = [
       { src: idea4Image, alt: 'Patient earning rewards for maintaining a NewGel+ scar-care streak' },
       { src: idea44Image, alt: 'Patient earning rewards for maintaining a NewGel+ scar-care streak' },
     ],
-    desc: 'A dedicated platform designed to improve patient adherence and retention through engaging daily activities, including:\n Daily Scar Streaks\n Weekly Challenges\n Reward Unlocks\n Referral Rewards\n and Community Milestones\n By rewarding consistency and participation, the platform encourages patients to maintain their scar-care routine and return to the platform regularly. Patients can unlock discounts and exclusive rewards redeemable through NewGel+ stores, driving repeat purchases and strengthening customer loyalty.',
+    desc: <>
+        A dedicated platform designed to improve patient adherence and retention through engaging daily activities, including: <br />1- Daily Scar Streaks  <br />2-  Weekly Challenges <br />3- Reward Unlocks <br />4- Referral Rewards<br />5-  Community Milestones <br /> <br />By rewarding consistency and participation, the platform encourages patients to maintain their scar-care routine and return to the platform regularly. Patients can unlock discounts and exclusive rewards redeemable through NewGel+ stores, driving repeat purchases and strengthening customer loyalty.
+      </>,
     bullets: [,
     ],
     tagline: 'Stay consistent. Build your streak. Unlock your next step',
