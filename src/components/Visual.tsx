@@ -3,14 +3,12 @@ import whoIsEbersImage from '../../Images/who is ebers.jpeg';
 import statementOfNeedImage from '../../Images/Statement of Need.jpeg';
 import objectiveImage from '../../Images/Objective.jpeg';
 import diagnosticImage from '../../Images/Diagnostic.jpeg';
-import ideaOneImage from '../../Images/Idea-1.jpeg';
-import ideaTwoImage from '../../Images/idea- 2.jpeg';
-import ideaThreeImage from '../../Images/idea- 3.jpeg';
-import ideaEightImage from '../../Images/idea- 8.jpeg';
-import ideaFourImage from '../../Images/idea- 4.jpeg';
-import ideaFiveImage from '../../Images/idea- 5.jpeg';
-import ideaSixImage from '../../Images/idea- 6.jpeg';
-import ideaSevenImage from '../../Images/idea- 7.jpeg';
+import idea1Image from '../../Images/idea- 1.jpg';
+import idea11Image from '../../Images/idea- 1.1.jpg';
+import idea2Image from '../../Images/idea- 2.png';
+import idea3Image from '../../Images/idea- 3.jpg';
+import idea4Image from '../../Images/idea- 4.png';
+import idea44Image from '../../Images/idea- 4.1.jpg';
 import conclusionImage from '../../Images/Conclusion.jpeg';
 
 /**
@@ -52,14 +50,13 @@ export default function Visual({
     need: statementOfNeedImage,
     objective: objectiveImage,
     diagnostic: diagnosticImage,
-    hub: ideaOneImage,
-    scan: ideaTwoImage,
-    whatsapp: ideaThreeImage,
-    new: ideaEightImage,
-    uv: ideaFourImage,
-    ar: ideaFiveImage,
-    streak: ideaSixImage,
-    weather: ideaSevenImage,
+    hub: idea1Image,
+    scan: idea2Image,
+    whatsapp: idea3Image,
+    new: idea2Image,
+    uv: idea4Image,
+    ar: idea44Image,
+    streak: idea11Image,
     conclusion: conclusionImage,
   };
 
@@ -478,4 +475,3 @@ function ConclusionScene() {
     </div>
   );
 }
-

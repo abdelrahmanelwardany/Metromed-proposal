@@ -2,8 +2,17 @@ import { useEffect, useRef, useState } from 'react';
 import type { ReactNode } from 'react';
 import ebersLogo from '../Images/Ebers logo.png';
 import infoImage from '../Images/info.png';
+import idea1Image from '../Images/idea- 1.jpg';
+import idea11Image from '../Images/idea- 1.1.jpg';
+import idea2Image from '../Images/idea- 2.png';
+import idea3Image from '../Images/idea- 3.jpg';
+import idea33Image from '../Images/idea- 3.1.jpg';
+import idea4Image from '../Images/idea- 4.png';
+import idea44Image from '../Images/idea- 4.1.jpg';
 import {
   ChevronDown,
+  ChevronLeft,
+  ChevronRight,
   ArrowUpRight,
   ArrowUp,
   Sparkles,
@@ -33,8 +42,7 @@ type Idea = {
   title: string;
   type: string;
   icon: typeof Globe;
-  visual: Parameters<typeof Visual>[0]['variant'];
-  alt: string;
+  images: { src: string; alt: string }[];
   desc: ReactNode;
   bullets: ReactNode[];
   tagline?: string;
@@ -75,19 +83,23 @@ const IDEAS: Idea[] = [
     title: 'NewGel  — See the Difference',
     type: 'INTERACTIVE  AWARENESS EXPERIENCE',
     icon: Sun,
-    visual: 'uv',
-    alt: 'A glowing sun orb radiating  rays over a gradient panel',
+    images: [
+      { src: idea1Image, alt: 'Patient viewing a personalized scar-care assessment and before-and-after visualization on a phone' },
+      { src: idea11Image, alt: 'Pharmacy QR-code experience showing a NewGel+ scar comparison and care guide' },
+    ],
     desc:       <>
-        <span className="font-bold">Entry point: Pharmacy Product Stand → QR Code → Before & After Experience</span>
-        <br />
-          The journey starts at a NewGel+ product stand in the pharmacy, where a QR code invites shoppers to “See the Difference.” Scanning it opens an interactive filter that captures the patient's scar and visualizes how it could potentially look after using NewGel+ as directed. The experience is followed by an educational flyer or digital material providing scar-care information and guidance on the product, helping raise awareness, demonstrate its potential benefits, and support the purchase decision at the point of sale.
+        <span className="font-bold">Entry Point: Pharmacy Product Stand / Clinic Drop Cards → QR Code → Scar Check → Personalized Recommendation → Before & After Filter → Digital Educational Guide → Purchase</span>
+        <br /><br />
+          The journey starts at a NewGel+ product stand in the pharmacy or through specialty-specific drop cards in clinics. Patients scan the QR code to open a camera-based experience that captures their scar, followed by a short Scar Check with questions tailored to the clinic specialty and relevant scar types.
+          <br /><br />
+          Based on their answers, patients receive a personalized recommendation for the most suitable NewGel+ product. An interactive filter then visualizes how their scar could potentially look with appropriate product use. Finally, they receive a personalized digital PDF explaining the recommended product, how to use it, and its benefits. Patients can then purchase the product directly from a pharmacy or through the NewGel+ website.
 
       </>,
     bullets: [,
     ],
-    tagline: 'Make the invisible impact of UV visible',
+    tagline: 'See your scar-care options before choosing the right NewGel+ product',
 
-  },
+  },/*
   {
     n: '02',
     title: 'Scar Check — From Diagnosis to Better Scar Care',
@@ -104,42 +116,54 @@ const IDEAS: Idea[] = [
     ),
     bullets: [,
     ],
-  },
+  },*/
   {
-    n: '03',
+    n: '02',
     title: 'Inside the Scar',
-    type: '3D / AR MECHANISM-OF-ACTION EXPERIENCE',
+    type: 'INTERACTIVE 3D MECHANISM-OF-ACTION EXPERIENCE',
     icon: Box,
-    visual: 'ar',
-    alt: 'A translucent 3D AR cube floating above the skin surface in green and blue',
+    images: [
+      { src: idea2Image, alt: 'Interactive NewGel+ experience exploring scar layers, scar formation, silicone, and products' },
+    ],
     desc:       <>
-        <span className="font-bold">Entry point: Website / E-commerce / Clinic Drop Cards → Interactive Experience → Product Consideration</span>
+        <span className="font-bold">Entry Point: Website / E-commerce / Clinic Drop Cards → Interactive Web Experience → Product Selection → Direct Purchase</span>
         <br />
-        Inside the Scar is an AR experience that allows users to scan a QR code and view a 3D visualization of the scar and the underlying skin layers through their phone. The experience illustrates how the scar and skin layers could improve over time with silicone-based scar management, helping users better understand the healing process and the role of NewGel+. It can be integrated into the NewGel+ website, promoted through e-commerce product pages, and supported by social media to drive traffic and encourage product consideration.
+        Inside the Scar is an interactive web experience featuring impressive 3D animations that take users beneath the skin to explore scar formation and understand how silicone-based scar management works. Through an engaging visual journey, users discover how NewGel+ products work and how the scar may improve over time with appropriate use. The experience showcases the different NewGel+ products and how each works, allowing users to explore the available options and select the most suitable product before being redirected to the e-commerce store to purchase it directly.
       </>,
     bullets: [
     ],
     tagline: 'See how silicone works .  beneath the surface',
   },
   {
-n: '04',
-    title: 'Scar Journey',
+    n: '03',
+    title: 'AI-POWERED PATIENT RECOVERY COMPANION',
     type: 'WHATSAPP RECOVERY COMPANION',
     icon: MessageSquare,
-    visual: 'whatsapp',
-    alt: 'A WhatsApp-style chat conversation with care reminders and a patient reply',
-    desc: 'A personalized WhatsApp recovery journey that stays with patients from their first purchase through the full scar-healing period. It sends timely reminders, care tips, progress check-ins, and practical guidance to help patients stay consistent with their NewGel+ routine. while introducing relevant features based on their recovery needs.',
-    bullets: [,
+    images: [
+      { src: idea3Image, alt: 'Patient receiving NewGel+ recovery messages, care tips, and scar-progress check-ins' },
+      { src: idea33Image, alt: 'Patient receiving NewGel+ recovery messages, care tips, and scar-progress check-ins' },
+    ],
+    desc:       <>
+        <span className="font-bold">Entry Point: Product Purchase / Interactive Experiences → Chatbot (WhatsApp / Telegram / Standalone Platform) → Ongoing Follow-up & Progress Tracking</span>
+        <br />
+        Scar Journey is an AI-powered chatbot that supports patients throughout their scar-care journey via WhatsApp, Telegram, or a standalone platform. Patients can access the chatbot after purchasing a NewGel+ product or through any of the interactive experiences. It provides personalized information about NewGel+ products, explains how to use them and what makes them different, and sends timely reminders and follow-ups to encourage consistent use and improve adherence.
+        <br />
+        <br />
+        Patients can also upload photos of their scars to track their progress over time, while receiving relevant care tips, educational materials, and product guidance. The channel can also be used to share promotional offers, discounts, and other relevant content, helping maintain patient engagement throughout the recovery journey.
+      </>,
+    bullets: [
     ],
   },
   {
-    n: '05',
+    n: '04',
     title: 'Scar Streak & Score',
     type: 'GAMIFIED RECOVERY & LOYALTY JOURNEY',
     icon: Flame,
-    visual: 'streak',
-    alt: 'A gamified streak calendar with glowing green-blue completed days and a streak badge',
-    desc: 'Patients build a Scar Streak by logging their daily routine and progress photos. Completing a full streak .  for example, finishing a full treatment cycle without missing a week .  unlocks a real reward: a discount on their next NewGel+ product or a free gift, redeemable directly through the Hub. Instead of a generic loyalty points system, the reward is tied to completing recovery, giving patients a concrete reason to finish treatment and repurchase.',
+    images: [
+      { src: idea4Image, alt: 'Patient earning rewards for maintaining a NewGel+ scar-care streak' },
+      { src: idea44Image, alt: 'Patient earning rewards for maintaining a NewGel+ scar-care streak' },
+    ],
+    desc: 'A dedicated platform designed to improve patient adherence and retention through engaging daily activities, including:\n Daily Scar Streaks\n Weekly Challenges\n Reward Unlocks\n Referral Rewards\n and Community Milestones\n By rewarding consistency and participation, the platform encourages patients to maintain their scar-care routine and return to the platform regularly. Patients can unlock discounts and exclusive rewards redeemable through NewGel+ stores, driving repeat purchases and strengthening customer loyalty.',
     bullets: [,
     ],
     tagline: 'Stay consistent. Build your streak. Unlock your next step',
@@ -452,6 +476,11 @@ function Diagnostic() {
 
 function IdeaCard({ idea, isOpen, onToggle }: { idea: Idea; isOpen: boolean; onToggle: () => void }) {
   const Icon = idea.icon;
+  const [activeImage, setActiveImage] = useState(0);
+  const showImage = (index: number) => {
+    setActiveImage((index + idea.images.length) % idea.images.length);
+  };
+
   return (
     <div className="reveal">
       <div
@@ -503,7 +532,52 @@ function IdeaCard({ idea, isOpen, onToggle }: { idea: Idea; isOpen: boolean; onT
                 </div>
               )}
             </div>
-            <Visual variant={idea.visual} alt={idea.alt} className="aspect-[4/3] w-full" />
+            <div className="space-y-3">
+              <div className="overflow-hidden rounded-2xl border border-white/10 bg-ink-950">
+                <img
+                  src={idea.images[activeImage].src}
+                  alt={idea.images[activeImage].alt}
+                  className="aspect-video w-full object-cover"
+                />
+              </div>
+              {idea.images.length > 1 && (
+                <div className="flex items-center justify-between gap-3">
+                  <button
+                    type="button"
+                    onClick={() => showImage(activeImage - 1)}
+                    aria-label={`Show previous image for ${idea.title}`}
+                    className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-white/15 text-white/70 transition hover:border-brand-green/50 hover:text-brand-green-light focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-green-light"
+                  >
+                    <ChevronLeft className="h-5 w-5" />
+                  </button>
+                  <div className="flex items-center gap-2" role="group" aria-label="Choose an idea image">
+                    {idea.images.map((image, index) => (
+                      <button
+                        key={image.src}
+                        type="button"
+                        onClick={() => showImage(index)}
+                        aria-label={`Show image ${index + 1} of ${idea.images.length} for ${idea.title}`}
+                        aria-pressed={activeImage === index}
+                        className={`h-2 rounded-full transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-green-light ${
+                          activeImage === index ? 'w-6 bg-brand-green-light' : 'w-2 bg-white/30 hover:bg-white/60'
+                        }`}
+                      />
+                    ))}
+                  </div>
+                  <span className="sr-only" aria-live="polite">
+                    Image {activeImage + 1} of {idea.images.length}
+                  </span>
+                  <button
+                    type="button"
+                    onClick={() => showImage(activeImage + 1)}
+                    aria-label={`Show next image for ${idea.title}`}
+                    className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-white/15 text-white/70 transition hover:border-brand-green/50 hover:text-brand-green-light focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-green-light"
+                  >
+                    <ChevronRight className="h-5 w-5" />
+                  </button>
+                </div>
+              )}
+            </div>
           </div>
         </div>
         </div>
@@ -528,7 +602,7 @@ function Ideas() {
         <div className="absolute right-0 top-1/4 h-[60vh] w-[60vh] rounded-full bg-brand-green/10 blur-[120px]" />
       </div>
       <div className="container-x">
-        <SectionHeading index="03" eyebrow="THE IDEAS" title={<>Five digital &amp; interactive <span className="text-gradient">concepts</span></>} />
+        <SectionHeading index="03" eyebrow="THE IDEAS" title={<>Four digital &amp; interactive <span className="text-gradient">concepts</span></>} />
         <p className="reveal reveal-delay-1 mt-7 max-w-3xl text-lg leading-relaxed text-white/70">
           These concepts work as one connected patient journey, powered by a central NewGel+ Hub. Patients can be directed to the Hub through multiple entry points, including Pharmacy Product Stands via QR codes, Clinic Drop Cards, the Website / E-commerce, and Social Media.
           <br /><br />
@@ -562,7 +636,7 @@ function Conclusion() {
           <div>
             <SectionHeading index="04" eyebrow="CONCLUSION" title={<>From invisible to <span className="text-gradient">first choice</span></>} />
             <p className="reveal reveal-delay-1 mt-7 text-lg leading-relaxed text-white/70">
-              These Five ideas respond directly to the gaps our research identified .  but ideas alone will not move NewGel+ from invisible to first choice. NewGel+ needs a well-crafted plan built on research: a dedicated SEO strategy to win the searches competitors currently own, and a structured plan to connect every idea into one patient journey. We would like to arrange a very urgent meeting to walk through our full analysis and align on next steps.
+              These four ideas respond directly to the gaps our research identified .  but ideas alone will not move NewGel+ from invisible to first choice. NewGel+ needs a well-crafted plan built on research: a dedicated SEO strategy to win the searches competitors currently own, and a structured plan to connect every idea into one patient journey. We would like to arrange a very urgent meeting to walk through our full analysis and align on next steps.
             </p>
             <div className="reveal reveal-delay-2 mt-9">
               <div className="relative overflow-hidden rounded-2xl border border-brand-green/30 bg-gradient-to-r from-brand-green/15 via-ink-900 to-brand-blue/15 p-6 sm:p-8">
